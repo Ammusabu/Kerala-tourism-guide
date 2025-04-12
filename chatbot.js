@@ -5,12 +5,12 @@ const keralaData = {
         description: "Kerala's capital with rich history, beaches, and the famous Padmanabhaswamy Temple.",
         highlights: [
             {name: "Kovalam Beach", wiki: "https://en.wikipedia.org/wiki/Kovalam",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/0/0e/01KovalamBeach%26Kerala.jpg/462px-01KovalamBeach%26Kerala.jpg.jpg"},
-            {name: "Padmanabhaswamy Temple", wiki: "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple",image: "images/padmanabha.jpg"},
+            {name: "Padmanabhaswamy Temple", wiki: "https://en.wikipedia.org/wiki/Padmanabhaswamy_Temple",image: "padmanabha.jpg"},
             {name: "Napier Museum", wiki: "https://en.wikipedia.org/wiki/Napier_Museum",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/Napier_Museum_TVM.jpg/500px-Napier_Museum_TVM.jpg"},
             {name: "Ponmudi Hills", wiki: "https://en.wikipedia.org/wiki/Ponmudi",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Morning_at_Ponmudi.jpg/500px-Morning_at_Ponmudi.jpg"}
         ],
         bestTime: "October to March",
-        image: "images/thiruvan.jpg"
+        image: "thiruvan.jpg"
     },
     "kollam": {
         name: "Kollam",
@@ -34,7 +34,7 @@ const keralaData = {
             {name: "Konni Elephant Training Center", wiki: "https://en.wikipedia.org/wiki/Konni,_Kerala",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Konni_Elephant_Training_Centre_Cage03.jpg/300px-Konni_Elephant_Training_Centre_Cage03.jpg"}
         ],
         bestTime: "November to February",
-        image: "images/kollam.jpg"
+        image: "kollam.jpg"
     },
     "alappuzha": {
         name: "Alappuzha",
@@ -46,7 +46,7 @@ const keralaData = {
             {name: "Vembanad Lake", wiki: "https://en.wikipedia.org/wiki/Punnamada",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/5/50/Kumarkom.jpg/500px-Kumarkom.jpg"}
         ],
         bestTime: "August to March",
-        image: "images/backwater1.png"
+        image: "backwater1.png"
     },
     "kottayam": {
         name: "Kottayam",
@@ -58,7 +58,7 @@ const keralaData = {
             {name: "Thirunakkara Temple", wiki: "https://en.wikipedia.org/wiki/Thirunakkara_Mahadeva_Temple",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/7/73/Thirunakkara_Mahadeva_temple.jpg/330px-Thirunakkara_Mahadeva_temple.jpg"}
         ],
         bestTime: "September to March",
-        image: "images/kollam.jpg"
+        image: "kollam.jpg"
     },
     "idukki": {
         name: "Idukki",
@@ -70,7 +70,7 @@ const keralaData = {
             {name: "Thekkady Wildlife Sanctuary", wiki: "https://en.wikipedia.org/wiki/Periyar_National_Park",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/19/LAKE_AT_PERIYAR_NATIONAL_PARK_AND_WILDLIFE_SANCTUARY.jpg/330px-LAKE_AT_PERIYAR_NATIONAL_PARK_AND_WILDLIFE_SANCTUARY.jpg"}
         ],
         bestTime: "September to May",
-        image: "images/idukki.jpg"
+        image: "idukki.jpg"
     },
     "ernakulam": {
         name: "Ernakulam",
@@ -82,7 +82,7 @@ const keralaData = {
             {name: "Cherai Beach", wiki: "https://en.wikipedia.org/wiki/Cherai_Beach",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/13/Sunrise_at_Cherai_Beach.jpg/375px-Sunrise_at_Cherai_Beach.jpg"}
         ],
         bestTime: "August to March",
-        image: "images/ernakulam.jpg"
+        image: "ernakulam.jpg"
     },
     "thrissur": {
         name: "Thrissur",
@@ -94,7 +94,7 @@ const keralaData = {
             {name: "Kerala Kalamandalam", wiki: "https://upload.wikimedia.org/wikipedia/commons/thumb/4/48/Koothambalam_at_Kerala_Kalamandalam.jpg/330px-Koothambalam_at_Kerala_Kalamandalam.jpg"}
         ],
         bestTime: "October to March",
-        image: "images/thrissur.jpg"
+        image: "thrissur.jpg"
     },
     "palakkad": {
         name: "Palakkad",
@@ -106,7 +106,7 @@ const keralaData = {
             {name: "Nelliyampathy Hills", wiki: "https://en.wikipedia.org/wiki/Nelliyampathy",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/The_Western_Ghats003.jpg/500px-The_Western_Ghats003.jpg"}
         ],
         bestTime: "July to March",
-        image: "images/pala.jpg"
+        image: "pala.jpg"
     },
     "malappuram": {
         name: "Malappuram",
@@ -118,7 +118,7 @@ const keralaData = {
             {name: "Kottakkunnu Park", wiki: "https://en.wikipedia.org/wiki/Kottakkunnu",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Kottakunnu_Hill%2C_Malapuram_-_panoramio_%281%29.jpg/282px-Kottakunnu_Hill%2C_Malapuram_-_panoramio_%281%29.jpg"}
         ],
         bestTime: "August to February",
-        image: "images/malappu.jpg"
+        image: "malappu.jpg"
     },
     "kozhikode": {
         name: "Kozhikode",
@@ -130,7 +130,7 @@ const keralaData = {
             {name: "Thusharagiri Waterfalls", wiki: "https://en.wikipedia.org/wiki/Thusharagiri_Falls",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Thusharagiri_bridge_1.jpg/330px-Thusharagiri_bridge_1.jpg"}
         ],
         bestTime: "September to March",
-        image: "images/kollam.jpg"
+        image: "kollam.jpg"
     },
     "wayanad": {
         name: "Wayanad",
@@ -153,7 +153,7 @@ const keralaData = {
             {name: "Theyyam Performances", wiki: "https://en.wikipedia.org/wiki/Theyyam",image:"https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Kandanar_Kelan_Theyyam_kannur.jpg/960px-Kandanar_Kelan_Theyyam_kannur.jpg"}
         ],
         bestTime: "August to March",
-        image: "images/kannur.jpg"
+        image: "kannur.jpg"
     },
     "kasaragod": {
         name: "Kasaragod",
