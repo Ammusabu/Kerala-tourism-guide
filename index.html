@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KlassicSunkist - Kerala Tourism</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div class="colorful-background"></div>
+
+    <header>
+        <div class="logo-container">
+            <h1 class="logo">KLASSIC <span>SUNKIST</span></h1>
+            <p class="tagline">"Take Time for Yourself"</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Destinations</a></li>
+                <li><a href="#">Experiences</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                
+                <h2>Discover Kerala's Magic</h2>
+                <div class="search-container">
+                    <input type="text" id="destination-search" placeholder="Search destinations...">
+                    <button id="search-btn"><i class="fas fa-search"></i> Explore</button>
+                </div>
+                <div id="search-results" class="search-results">
+                    <div class="results-grid" id="results-grid"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="destinations-section">
+            <h2>Explore Kerala's Districts</h2>
+            <div class="districts-container" id="districts-container" onclick="showView(event)">
+                <!-- Districts will be loaded here by JavaScript -->
+            </div>
+        </section>
+
+        <section class="chatbot-section">
+            <div class="chatbot-toggle">
+                <i class="fas fa-comment-dots"></i> Travel Assistant
+            </div>
+            <div class="chatbot-container">
+                <div class="chatbot-header">
+                    <h3><i class="fas fa-robot"></i> KlassicSunkist Guide</h3>
+                    <span class="close-chatbot"><i class="fas fa-times"></i></span>
+                </div>
+                <div class="chatbot-messages" id="chatbot-messages">
+                    <div class="bot-message">
+                        <p>Hello! I'm your travel assistant. Which District u want to visit?!</p>
+                    </div>
+                </div>
+                <div class="chatbot-input">
+                    <input type="text" id="user-input" placeholder="Ask about Kerala...">
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <p>&copy; 2023 KlassicSunkist. All rights reserved.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+</body>
+</html>
