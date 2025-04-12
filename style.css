@@ -1,0 +1,663 @@
+:root {
+    --primary: #cd5f5f;
+    --secondary: #4ECDC4;
+    --accent: #FFE66D;
+    --dark: #292F36;
+    --light: #F7FFF7;
+}
+
+.colorful-background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+        -45deg,
+        #e6de0a 0%,
+        #dc4325 15%,
+        #ed35d4 30%,
+        #2c83e7 45%,
+        #7f32be 75%,
+        #ea5119 85%,
+        #ef1f80 90%,
+        #77c4f1 100%
+      );                   
+    background-repeat: no-repeat;
+            background-size: 400% 400%;
+    animation: gradient 30s ease infinite;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 5%;
+    background-color: rgba(255,255,255,0.9);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: var(--dark);
+    letter-spacing: 1px;
+}
+
+.logo span {
+    color: #471025;
+}
+
+.tagline {
+    font-size: 1rem;
+    color: var(--dark);
+    font-style: cursive;
+    font-weight: 300;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    font-weight: bold;
+    margin-top: -5px;
+    font-size: 1.2rem;
+    color: #888;
+    font-weight: bold;
+    position: absolute;
+    bottom: auto;
+    margin-top: 0.25rem;
+    color: var(--primary);
+    right: 1rem;
+    gap: 2rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--dark);
+    font-weight: 1000;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--dark);
+}
+
+.hero {
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    text-align: center;
+}
+
+.hero-content h2 {
+    font-size: 3rem;
+    color: var(--light);
+    margin-bottom: 2rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.search-container {
+    display: flex;
+    max-width: 600px;
+    margin: 0 auto;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+#destination-search {
+    flex: 1;
+    padding: 1.2rem 1.5rem;
+    border: none;
+    font-size: 1.1rem;
+    outline: none;
+}
+
+#search-btn {
+    padding: 1.2rem 2rem;
+    background-color: var(--accent);
+    color: var(--dark);
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+#search-btn:hover {
+    background-color: var(--primary);
+    color: white;
+}
+
+.search-results {
+    margin-top: 2rem;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 10px;
+    padding: 1rem;
+    display: none;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.results-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.destination-tile {
+    background: white;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    cursor: pointer;
+}
+
+.destination-tile:hover {
+    transform: translateY(-5px);
+}
+
+.tile-image {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+
+.tile-content {
+    padding: 1rem;
+}
+
+.tile-content h3 {
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+
+.tile-content p {
+    font-size: 0.9rem;
+    color: var(--dark);
+    margin-bottom: 0.5rem;
+}
+
+.tile-highlights {
+    font-size: 0.8rem;
+    color: #666;
+}
+
+.no-results {
+    text-align: center;
+    padding: 2rem;
+    color: var(--dark);
+}
+
+.destinations-section {
+    padding: 3rem 5%;
+    background-color: rgba(255,255,255,0.9);
+}
+
+.destinations-section h2 {
+    text-align: center;
+    color: var(--dark);
+    margin-bottom: 2rem;
+    font-size: 2.2rem;
+}
+
+.districts-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 2rem;
+}
+
+.district-card {
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.district-card:hover {
+    transform: translateY(-5px);
+}
+
+.district-header {
+    padding: 1.5rem;
+    background-color: var(--primary);
+    color: white;
+}
+
+.district-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+.district-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.destination-tile-small {
+    background: var(--light);
+    border-radius: 8px;
+    padding: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.destination-tile-small:hover {
+    background: var(--secondary);
+    color: white;
+}
+
+.destination-tile-small h4 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.1rem;
+}
+
+.destination-tile-small p {
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+.district-highlight {
+    animation: highlight 2s ease-in-out;
+    box-shadow: 0 0 20px rgba(255, 215, 0, 0.7);
+}
+
+@keyframes highlight {
+    0% { box-shadow: 0 0 10px rgba(255, 215, 0, 0.3); }
+    50% { box-shadow: 0 0 30px rgba(255, 215, 0, 0.9); }
+    100% { box-shadow: 0 0 20px rgba(255, 215, 0, 0.7); }
+}
+
+.chatbot-section {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+}
+
+.chatbot-toggle {
+    background-color: var(--primary);
+    color: white;
+    padding: 1rem 1.5rem;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+}
+
+.chatbot-toggle:hover {
+    background-color: var(--dark);
+}
+
+.chatbot-container {
+    width: 350px;
+    background-color: white;
+    border-radius: 15px;
+    box-shadow: 0 5px 30px rgba(0,0,0,0.2);
+    overflow: hidden;
+    margin-top: 1rem;
+    display: none;
+    transform-origin: bottom right;
+    animation: scaleUp 0.3s ease;
+}
+
+@keyframes scaleUp {
+    from { transform: scale(0); }
+    to { transform: scale(1); }
+}
+
+.chatbot-header {
+    background-color: var(--dark);
+    color: white;
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chatbot-header h3 {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.close-chatbot {
+    cursor: pointer;
+    font-size: 1.2rem;
+}
+
+.chatbot-messages {
+    height: 300px;
+    padding: 1.5rem;
+    overflow-y: auto;
+    background-color: #f9f9f9;
+}
+
+.message {
+    margin-bottom: 1rem;
+    max-width: 80%;
+}
+
+.bot-message {
+    background-color: white;
+    padding: 0.8rem 1.2rem;
+    border-radius: 15px 15px 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    align-self: flex-start;
+}
+
+.user-message {
+    background-color: var(--accent);
+    color: var(--dark);
+    padding: 0.8rem 1.2rem;
+    border-radius: 15px 15px 0 15px;
+    margin-left: auto;
+    font-weight: 500;
+}
+
+.typing {
+    display: flex;
+    gap: 5px;
+    padding: 10px 15px;
+}
+
+.typing-dot {
+    width: 8px;
+    height: 8px;
+    background-color: #ccc;
+    border-radius: 50%;
+    animation: typingAnimation 1.4s infinite ease-in-out;
+}
+
+.typing-dot:nth-child(2) {
+    animation-delay: 0.2s;
+}
+
+.typing-dot:nth-child(3) {
+    animation-delay: 0.4s;
+}
+
+@keyframes typingAnimation {
+    0%, 60%, 100% { transform: translateY(0); opacity: 0.6; }
+    30% { transform: translateY(-5px); opacity: 1; }
+}
+
+.chatbot-input {
+    display: flex;
+    padding: 1rem;
+    background-color: white;
+    border-top: 1px solid #eee;
+}
+
+#user-input {
+    flex: 1;
+    padding: 0.8rem 1.2rem;
+    border: 1px solid #ddd;
+    border-radius: 50px;
+    outline: none;
+}
+
+#send-btn {
+    margin-left: 0.5rem;
+    padding: 0 1.5rem;
+    background-color: var(--primary);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#send-btn:hover {
+    background-color: var(--dark);
+}
+
+footer {
+    background-color: var(--dark);
+    color: white;
+    padding: 2rem 5%;
+    text-align: center;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.social-icons a {
+    color: white;
+    font-size: 1.2rem;
+    float: right;
+    transition: color 0.3s;
+    display: flex;
+    justify-content: space-between;
+    align-items: top;
+}
+
+.social-icons a:hover {
+    color: var(--accent);
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .hero-content h2 {
+        font-size: 2rem;
+    }
+    
+    .chatbot-container {
+        width: 90%;
+        right: 5%;
+    }
+    
+    .results-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .destinations-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .districts-container {
+        grid-template-columns: 1fr;
+    }
+}
+/* Add these styles to ensure proper chatbot functionality */
+#chatbot-container {
+    display: none;
+}
+
+#chatbot-container.show {
+    display: block;
+}
+
+/* Ensure district containers are properly styled */
+.district-card {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.district-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.destinations-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.destination-tile-small {
+    background: #f5f5f5;
+    padding: 10px;
+    border-radius: 5px;
+    transition: all 0.3s;
+}
+
+.destination-tile-small:hover {
+    background: #4ECDC4;
+    color: white;
+}
+
+/* District Card Styles */
+.district-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 50px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+}
+
+.district-main-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+    filter: brightness(0.8);
+}
+
+.district-header {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 1.5rem;
+    background: linear-gradient(transparent, rgba(0,0,0,0.7));
+    color: white;
+}
+
+.district-header h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+}
+
+.district-header p {
+    margin: 0.5rem 0 0;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+}
+
+/* Destination Tile Styles */
+.destination-tile {
+    display: flex;
+    flex-direction: column;
+    background: rgb(255, 255, 255);
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    text-decoration: none;
+    color: var(--dark);
+}
+
+.destination-image {
+    width: 100%;
+    height: 100px;
+    object-fit: cover;
+}
+
+.destination-content {
+    padding: 0.1rem;
+}
+
+.destination-content h4 {
+    margin: 0 0 0.1rem 0;
+    color: var(--primary);
+}
+
+.destination-content p {
+    margin: 0;
+    font-size: 0.1rem;
+    color: #666;
+}
+.district-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Adjust as needed */
+    overflow: hidden;
+    border-radius: 20px 20px 0 0;
+}
+
+.district-main-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.district-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    padding: 20px;
+    color: white;
+}
+
+.district-text h3 {
+    margin: 0;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.district-text p {
+    margin: 5px 0 0;
+    font-size: 0.9rem;
+    color: rgba(255,255,255,0.9);
+}
+
+.district-best-time {
+    padding: 10px 15px;
+    background-color: #f5f5f5;
+    font-size: 0.9rem;
+}
+
+.district-card:hover .district-main-image {
+    transform: scale(1.05);
+}
