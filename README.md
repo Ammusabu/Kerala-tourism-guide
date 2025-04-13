@@ -8,7 +8,7 @@ A beautiful, interactive guide to Kerala - "God's Own Country" showcasing its st
 ![Kerala Tourism Screenshot](![image](https://github.com/user-attachments/assets/f26725b7-aa5f-4c0b-bea1-522d977cc31d),![image](https://github.com/user-attachments/assets/d8fecd3a-a18c-4ebb-9911-bfb8d2540350)
 
 )  
-*(Replace with your actual screenshot URL)*
+
 
 ## Features ✨
 
@@ -56,7 +56,7 @@ Experience the website live:
 | ![Desktop](![image](https://github.com/user-attachments/assets/3fde2a33-cf59-462b-bb12-747672031eee)
 ) | ![Mobile](screenshots/mobile.jpg) |
 
-*(Replace with your actual screenshot paths)*
+
 
 ## Future Enhancements 🔮
 
